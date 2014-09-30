@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('faq');
+  this.route('movie');
 });
 
 export default Router;

@@ -1,0 +1,22 @@
+<h1>Welcome to the FAQ page</h1>
+ <table>
+   <tr>
+    <td {{action "sortByAttribute" "show_title"}}>show_title</td>
+    <td>release_year</td>
+    <td>rating</td>
+    <td>director</td>
+    <td>summary</td>
+    <td>poster</td>
+    <td>runtime</td>
+   </tr>
+ {{#each}}
+   <tr>
+    <td>{{show_title}}</td>
+    <td>{{release_year}}</td>
+    <td>{{rating}}</td>
+    <td>{{director}}</td>
+    <td>{{summary}}</td>
+    <td><img {{bind-attr src=poster}}></td>
+    <td>{{runtime}}</td>
+   </tr>
+ {{/each}}
